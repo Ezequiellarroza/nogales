@@ -1,0 +1,226 @@
+{
+  "common": {
+    "projectName": "Nogales",
+    "tagline": "Departamentos frente al mar en Mar del Plata",
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "backToHome": "Volver al inicio",
+    "viewMore": "Ver más",
+    "viewAll": "Ver todas",
+    "learnMore": "Conocer más",
+    "close": "Cerrar",
+    "open": "Abrir",
+    "menu": "Menú",
+    "language": "Idioma",
+    "spanish": "Español",
+    "english": "English",
+    "enquire": "Consultar"
+  },
+  "nav": {
+    "home": "Inicio",
+    "units": "Unidades",
+    "amenities": "Amenities",
+    "gallery": "Galería",
+    "location": "Ubicación",
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero": {
+      "cta": "Consultar disponibilidad",
+      "slides": [
+        {
+          "title": "Viví Mar del Plata<br/>desde Nogales",
+          "subtitle": "Departamentos amplios y luminosos a 300 metros del mar"
+        },
+        {
+          "title": "Tu lugar<br/>cerca del mar",
+          "subtitle": "Ubicación estratégica cerca de Playa Grande"
+        },
+        {
+          "title": "Diseño y<br/>confort",
+          "subtitle": "Amenities premium: piscina, cochera y parrilla"
+        }
+      ]
+    },
+    "values": {
+      "location": "Ubicación",
+      "locationDesc": "A solo 300 metros del mar y cerca de Playa Grande",
+      "comfort": "Confort",
+      "comfortDesc": "Departamentos amplios, luminosos y funcionales",
+      "amenities": "Amenities",
+      "amenitiesDesc": "Piscina, cochera y parrilla para disfrutar"
+    },
+    "intro": {
+      "title": "Tu lugar en Mar del Plata",
+      "description": "Nogales ofrece departamentos pensados para quienes buscan calidad de vida frente al mar. Ubicación privilegiada, diseño contemporáneo y amenities de primer nivel en uno de los mejores puntos de Mar del Plata.",
+      "cta": "Conocé las unidades"
+    },
+    "units": {
+      "title": "Nuestras Unidades",
+      "subtitle": "Tipologías pensadas para cada necesidad",
+      "cta": "Ver todas las unidades"
+    },
+    "features": {
+      "title": "Amenities del edificio",
+      "subtitle": "Todo lo que necesitás para disfrutar",
+      "cta": "Ver amenities"
+    },
+    "architecture": {
+      "title": "Diseño que inspira",
+      "description": "Un edificio de líneas contemporáneas en una ubicación privilegiada. Amplios balcones, excelente iluminación natural y vistas únicas a solo pasos del mar."
+    },
+    "cta": {
+      "title": "¿Te interesa una unidad en Nogales?",
+      "subtitle": "Consultanos por disponibilidad y formas de pago",
+      "button": "Solicitar información",
+      "contact": "O escribinos por WhatsApp"
+    }
+  },
+  "units": {
+    "pageTitle": "Nuestras Unidades",
+    "pageSubtitle": "Departamentos amplios y luminosos",
+    "filters": {
+      "all": "Todas",
+      "executive": "Executive Suite",
+      "duplex-2amb": "Duplex 2 amb",
+      "duplex-3amb": "Duplex 3 amb"
+    },
+    "features": {
+      "ambientes": "Ambientes",
+      "dormitorios": "Dormitorios",
+      "banos": "Baños",
+      "balcon": "Balcón",
+      "cocina": "Cocina",
+      "living": "Living",
+      "luminoso": "Luminoso",
+      "vista": "Vista"
+    },
+    "superficie": "Superficie",
+    "enquire": "Consultar por esta unidad",
+    "types": {
+      "executive": {
+        "name": "Executive Suite",
+        "shortDesc": "Monoambiente premium con excelente vista",
+        "description": "Unidad de categoría con diseño contemporáneo, excelente iluminación natural y balcón con vista. Ideal para inversión o vivienda personal."
+      },
+      "duplex2": {
+        "name": "Duplex 2 Ambientes",
+        "shortDesc": "Living y dormitorio en dos plantas",
+        "description": "Departamento en dos plantas con living-comedor, cocina integrada y dormitorio en planta alta. Balcón y excelente luminosidad. Perfecto para parejas o inversión."
+      },
+      "duplex3": {
+        "name": "Duplex 3 Ambientes",
+        "shortDesc": "Dos dormitorios y amplio living",
+        "description": "Espacioso departamento en dos plantas con living-comedor, cocina integrada y dos dormitorios. Ideal para familias que buscan comodidad cerca del mar."
+      }
+    }
+  },
+  "amenities": {
+    "pageTitle": "Amenities",
+    "pageSubtitle": "Espacios pensados para disfrutar",
+    "categories": {
+      "building": "Del edificio",
+      "units": "En las unidades"
+    },
+    "list": {
+      "pool": {
+        "name": "Piscina",
+        "description": "Piscina descubierta para disfrutar en los días de calor."
+      },
+      "parking": {
+        "name": "Cochera",
+        "description": "Cochera cubierta incluida para tu vehículo."
+      },
+      "grill": {
+        "name": "Parrilla",
+        "description": "Área de parrilla para disfrutar un asado con familia y amigos."
+      },
+      "security": {
+        "name": "Seguridad",
+        "description": "Edificio con seguridad para tu tranquilidad."
+      },
+      "luminosity": {
+        "name": "Luminosidad",
+        "description": "Unidades con excelente iluminación natural."
+      },
+      "balcony": {
+        "name": "Balcón",
+        "description": "Todas las unidades cuentan con balcón."
+      }
+    }
+  },
+  "gallery": {
+    "pageTitle": "Galería",
+    "pageSubtitle": "Conocé Nogales",
+    "categories": {
+      "all": "Todas",
+      "units": "Unidades",
+      "common": "Áreas comunes",
+      "building": "Edificio",
+      "details": "Detalles"
+    },
+    "viewImage": "Ver imagen",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "of": "de"
+  },
+  "location": {
+    "pageTitle": "Ubicación",
+    "pageSubtitle": "A 300 metros del mar",
+    "address": "Dirección",
+    "area": "Mar del Plata, cerca de Playa Grande",
+    "howToArrive": "Cómo llegar",
+    "byCar": "En auto",
+    "byCarDesc": "Fácil acceso desde la ruta 2. Cochera propia incluida.",
+    "nearby": "En la zona",
+    "nearbyDesc": "A pasos de Playa Grande, restaurantes, comercios y servicios.",
+    "beach": "Playa",
+    "beachDesc": "A solo 300 metros del mar. Disfrutá la costa todo el año.",
+    "contactUs": "Contactanos",
+    "contactSubtitle": "¿Te interesa una unidad? Escribinos",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Email",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "send": "Enviar consulta",
+      "sending": "Enviando...",
+      "success": "¡Consulta enviada! Te responderemos pronto.",
+      "error": "Hubo un error. Por favor, intentá de nuevo."
+    }
+  },
+  "footer": {
+    "description": "Desarrollo inmobiliario en Mar del Plata. Departamentos amplios y luminosos a solo 300 metros del mar, cerca de Playa Grande. Piscina, cochera y parrilla.",
+    "quickLinks": "Enlaces",
+    "contact": "Contacto",
+    "followUs": "Seguinos",
+    "copyright": "© {{year}} Nogales. Todos los derechos reservados.",
+    "developedBy": "Desarrollado por",
+    "privacyPolicy": "Privacidad",
+    "termsConditions": "Términos"
+  },
+  "accessibility": {
+    "skipToContent": "Saltar al contenido",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "toggleDarkMode": "Alternar modo oscuro",
+    "changeLanguage": "Cambiar idioma",
+    "scrollToTop": "Volver arriba"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Página no encontrada",
+      "description": "La página que buscás no existe o fue movida.",
+      "cta": "Volver al inicio"
+    },
+    "generic": {
+      "title": "Algo salió mal",
+      "description": "Ocurrió un error inesperado. Por favor, intentá de nuevo.",
+      "cta": "Reintentar"
+    }
+  },
+  "whatsapp": {
+    "defaultMessage": "Hola! Me interesa conocer más sobre los departamentos en Nogales. ¿Podrían darme información?",
+    "tooltip": "Escribinos"
+  }
+}

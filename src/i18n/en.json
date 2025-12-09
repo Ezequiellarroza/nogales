@@ -1,0 +1,226 @@
+{
+  "common": {
+    "projectName": "Nogales",
+    "tagline": "Beachfront apartments in Mar del Plata",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "backToHome": "Back to home",
+    "viewMore": "View more",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "close": "Close",
+    "open": "Open",
+    "menu": "Menu",
+    "language": "Language",
+    "spanish": "Español",
+    "english": "English",
+    "enquire": "Enquire"
+  },
+  "nav": {
+    "home": "Home",
+    "units": "Units",
+    "amenities": "Amenities",
+    "gallery": "Gallery",
+    "location": "Location",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "cta": "Check availability",
+      "slides": [
+        {
+          "title": "Live Mar del Plata<br/>from Nogales",
+          "subtitle": "Spacious and bright apartments just 300 meters from the sea"
+        },
+        {
+          "title": "Your place<br/>near the sea",
+          "subtitle": "Strategic location near Playa Grande"
+        },
+        {
+          "title": "Design and<br/>comfort",
+          "subtitle": "Premium amenities: pool, parking, and BBQ area"
+        }
+      ]
+    },
+    "values": {
+      "location": "Location",
+      "locationDesc": "Just 300 meters from the sea and near Playa Grande",
+      "comfort": "Comfort",
+      "comfortDesc": "Spacious, bright, and functional apartments",
+      "amenities": "Amenities",
+      "amenitiesDesc": "Pool, parking, and BBQ area to enjoy"
+    },
+    "intro": {
+      "title": "Your place in Mar del Plata",
+      "description": "Nogales offers apartments designed for those seeking quality of life by the sea. Privileged location, contemporary design, and top-tier amenities in one of the best spots in Mar del Plata.",
+      "cta": "Discover the units"
+    },
+    "units": {
+      "title": "Our Units",
+      "subtitle": "Floor plans designed for every need",
+      "cta": "View all units"
+    },
+    "features": {
+      "title": "Building amenities",
+      "subtitle": "Everything you need to enjoy",
+      "cta": "View amenities"
+    },
+    "architecture": {
+      "title": "Design that inspires",
+      "description": "A contemporary building in a privileged location. Spacious balconies, excellent natural lighting, and unique views just steps from the sea."
+    },
+    "cta": {
+      "title": "Interested in a unit at Nogales?",
+      "subtitle": "Contact us for availability and payment options",
+      "button": "Request information",
+      "contact": "Or message us on WhatsApp"
+    }
+  },
+  "units": {
+    "pageTitle": "Our Units",
+    "pageSubtitle": "Spacious and bright apartments",
+    "filters": {
+      "all": "All",
+      "executive": "Executive Suite",
+      "duplex-2amb": "2-Room Duplex",
+      "duplex-3amb": "3-Room Duplex"
+    },
+    "features": {
+      "ambientes": "Rooms",
+      "dormitorios": "Bedrooms",
+      "banos": "Bathrooms",
+      "balcon": "Balcony",
+      "cocina": "Kitchen",
+      "living": "Living room",
+      "luminoso": "Bright",
+      "vista": "View"
+    },
+    "superficie": "Area",
+    "enquire": "Enquire about this unit",
+    "types": {
+      "executive": {
+        "name": "Executive Suite",
+        "shortDesc": "Premium studio with excellent views",
+        "description": "Premium unit with contemporary design, excellent natural lighting, and balcony with views. Ideal for investment or personal residence."
+      },
+      "duplex2": {
+        "name": "2-Room Duplex",
+        "shortDesc": "Living room and bedroom on two floors",
+        "description": "Two-story apartment with living-dining area, integrated kitchen, and bedroom upstairs. Balcony and excellent brightness. Perfect for couples or investment."
+      },
+      "duplex3": {
+        "name": "3-Room Duplex",
+        "shortDesc": "Two bedrooms and spacious living area",
+        "description": "Spacious two-story apartment with living-dining area, integrated kitchen, and two bedrooms. Ideal for families seeking comfort near the sea."
+      }
+    }
+  },
+  "amenities": {
+    "pageTitle": "Amenities",
+    "pageSubtitle": "Spaces designed for enjoyment",
+    "categories": {
+      "building": "Building",
+      "units": "In the units"
+    },
+    "list": {
+      "pool": {
+        "name": "Pool",
+        "description": "Outdoor pool to enjoy on warm days."
+      },
+      "parking": {
+        "name": "Parking",
+        "description": "Covered parking included for your vehicle."
+      },
+      "grill": {
+        "name": "BBQ Area",
+        "description": "Grill area to enjoy a barbecue with family and friends."
+      },
+      "security": {
+        "name": "Security",
+        "description": "Building with security for your peace of mind."
+      },
+      "luminosity": {
+        "name": "Natural Light",
+        "description": "Units with excellent natural lighting."
+      },
+      "balcony": {
+        "name": "Balcony",
+        "description": "All units feature a balcony."
+      }
+    }
+  },
+  "gallery": {
+    "pageTitle": "Gallery",
+    "pageSubtitle": "Discover Nogales",
+    "categories": {
+      "all": "All",
+      "units": "Units",
+      "common": "Common areas",
+      "building": "Building",
+      "details": "Details"
+    },
+    "viewImage": "View image",
+    "previous": "Previous",
+    "next": "Next",
+    "of": "of"
+  },
+  "location": {
+    "pageTitle": "Location",
+    "pageSubtitle": "300 meters from the sea",
+    "address": "Address",
+    "area": "Mar del Plata, near Playa Grande",
+    "howToArrive": "How to arrive",
+    "byCar": "By car",
+    "byCarDesc": "Easy access from Route 2. Private parking included.",
+    "nearby": "Nearby",
+    "nearbyDesc": "Steps from Playa Grande, restaurants, shops, and services.",
+    "beach": "Beach",
+    "beachDesc": "Just 300 meters from the sea. Enjoy the coast year-round.",
+    "contactUs": "Contact us",
+    "contactSubtitle": "Interested in a unit? Write to us",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send enquiry",
+      "sending": "Sending...",
+      "success": "Enquiry sent! We'll get back to you soon.",
+      "error": "There was an error. Please try again."
+    }
+  },
+  "footer": {
+    "description": "Real estate development in Mar del Plata. Spacious and bright apartments just 300 meters from the sea, near Playa Grande. Pool, parking, and BBQ area.",
+    "quickLinks": "Links",
+    "contact": "Contact",
+    "followUs": "Follow us",
+    "copyright": "© {{year}} Nogales. All rights reserved.",
+    "developedBy": "Developed by",
+    "privacyPolicy": "Privacy",
+    "termsConditions": "Terms"
+  },
+  "accessibility": {
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleDarkMode": "Toggle dark mode",
+    "changeLanguage": "Change language",
+    "scrollToTop": "Scroll to top"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you're looking for doesn't exist or has been moved.",
+      "cta": "Back to home"
+    },
+    "generic": {
+      "title": "Something went wrong",
+      "description": "An unexpected error occurred. Please try again.",
+      "cta": "Try again"
+    }
+  },
+  "whatsapp": {
+    "defaultMessage": "Hello! I'm interested in learning more about the apartments at Nogales. Could you give me information?",
+    "tooltip": "Message us"
+  }
+}
