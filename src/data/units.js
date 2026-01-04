@@ -1,86 +1,77 @@
 /**
- * Datos de las unidades - Nogales
+ * Datos de las habitaciones - Nogales Apartamentos
  * 
- * Desarrollo inmobiliario en Mar del Plata
+ * Alquiler temporario en Mar del Plata
  * Las traducciones están en i18n (units.types.[key])
  */
 
 // Características disponibles (iconos de Lucide React)
 export const FEATURES = {
-  ambientes: { icon: 'LayoutGrid', i18nKey: 'units.features.ambientes' },
-  dormitorios: { icon: 'Bed', i18nKey: 'units.features.dormitorios' },
-  banos: { icon: 'Bath', i18nKey: 'units.features.banos' },
-  balcon: { icon: 'Sun', i18nKey: 'units.features.balcon' },
-  cocina: { icon: 'ChefHat', i18nKey: 'units.features.cocina' },
+  kitchen: { icon: 'ChefHat', i18nKey: 'units.features.kitchen' },
+  wifi: { icon: 'Wifi', i18nKey: 'units.features.wifi' },
+  ac: { icon: 'AirVent', i18nKey: 'units.features.ac' },
+  tv: { icon: 'Tv', i18nKey: 'units.features.tv' },
+  linens: { icon: 'Bed', i18nKey: 'units.features.linens' },
+  closet: { icon: 'DoorOpen', i18nKey: 'units.features.closet' },
+  patio: { icon: 'Trees', i18nKey: 'units.features.patio' },
   living: { icon: 'Sofa', i18nKey: 'units.features.living' },
-  luminoso: { icon: 'Lightbulb', i18nKey: 'units.features.luminoso' },
-  vista: { icon: 'Eye', i18nKey: 'units.features.vista' },
+  poolView: { icon: 'Waves', i18nKey: 'units.features.poolView' },
+  seaView: { icon: 'Sunrise', i18nKey: 'units.features.seaView' },
 }
 
-// Tipos de unidad
+// Tipos de habitación
 export const UNIT_TYPES = {
+  SUPERIOR: 'superior',
   EXECUTIVE: 'executive',
-  DUPLEX_2: 'duplex-2amb',
-  DUPLEX_3: 'duplex-3amb',
 }
 
 /**
- * Lista de unidades
+ * Lista de habitaciones
  */
 export const units = [
+  {
+    id: 'superior',
+    slug: 'superior',
+    type: UNIT_TYPES.SUPERIOR,
+    i18nKey: 'superior',
+    capacity: {
+      guests: 4,
+      bedrooms: 1,
+      bathrooms: 1,
+    },
+    bedConfig: '1 cama doble + sofá cama',
+    features: ['kitchen', 'wifi', 'ac', 'tv', 'linens', 'closet', 'patio', 'poolView'],
+    featured: true,
+    images: [
+      'images/units/superior-1.webp',
+      'images/units/superior-2.webp',
+      'images/units/superior-3.webp',
+      'images/units/superior-4.webp',
+      'images/units/superior-5.webp',
+    ],
+    highlights: ['kitchen', 'poolView', 'patio'],
+  },
   {
     id: 'executive',
     slug: 'executive-suite',
     type: UNIT_TYPES.EXECUTIVE,
     i18nKey: 'executive',
-    ambientes: 1,
     capacity: {
-      dormitorios: 1,
-      banos: 1,
+      guests: 6,
+      bedrooms: 2,
+      bathrooms: 1,
     },
-    superficie: null, // m2 - pendiente info cliente
-    features: ['luminoso', 'balcon', 'cocina', 'vista'],
+    bedConfig: '1 cama doble + 2 camas individuales + sofá cama',
+    features: ['kitchen', 'wifi', 'ac', 'tv', 'linens', 'closet', 'patio', 'living', 'seaView'],
     featured: true,
     images: [
-      'images/units/executive-suite.webp',
+      'images/units/executive-1.webp',
+      'images/units/executive-2.webp',
+      'images/units/executive-3.webp',
+      'images/units/executive-4.webp',
+      'images/units/executive-5.webp',
     ],
-    highlights: ['luminoso', 'balcon', 'vista'],
-  },
-  {
-    id: 'duplex-2amb',
-    slug: 'duplex-2-ambientes',
-    type: UNIT_TYPES.DUPLEX_2,
-    i18nKey: 'duplex2',
-    ambientes: 2,
-    capacity: {
-      dormitorios: 1,
-      banos: 1,
-    },
-    superficie: null,
-    features: ['luminoso', 'balcon', 'cocina', 'living', 'vista'],
-    featured: true,
-    images: [
-      'images/units/duplex-2amb.webp',
-    ],
-    highlights: ['living', 'balcon', 'luminoso'],
-  },
-  {
-    id: 'duplex-3amb',
-    slug: 'duplex-3-ambientes',
-    type: UNIT_TYPES.DUPLEX_3,
-    i18nKey: 'duplex3',
-    ambientes: 3,
-    capacity: {
-      dormitorios: 2,
-      banos: 1,
-    },
-    superficie: null,
-    features: ['luminoso', 'balcon', 'cocina', 'living', 'dormitorios', 'vista'],
-    featured: true,
-    images: [
-      'images/units/duplex-3amb.webp',
-    ],
-    highlights: ['dormitorios', 'living', 'vista'],
+    highlights: ['seaView', 'living', 'kitchen'],
   },
 ]
 
@@ -103,11 +94,6 @@ export function getUnitsByType(type) {
 
 export function getFeaturedUnits() {
   return units.filter(unit => unit.featured)
-}
-
-export function formatSuperficie(superficie) {
-  if (!superficie) return 'Consultar'
-  return `${superficie} m²`
 }
 
 export default units

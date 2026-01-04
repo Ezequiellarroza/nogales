@@ -10,7 +10,7 @@ const slideImages = [
     id: 1,
     desktop: 'images/hero/slide-1-desktop.webp',
     mobile: 'images/hero/slide-1-mobile.webp',
-    alt: 'Vista exterior Nogales'
+    alt: 'Vista exterior Nogales Apartamentos'
   },
   {
     id: 2,
@@ -22,12 +22,12 @@ const slideImages = [
     id: 3,
     desktop: 'images/hero/slide-3-desktop.webp',
     mobile: 'images/hero/slide-3-mobile.webp',
-    alt: 'Amenities Nogales'
+    alt: 'Amenities y piscina Nogales'
   }
 ]
 
-const SLIDE_DURATION = 5000 // 5 segundos
-const TRANSITION_DURATION = 1000 // 1 segundo
+const SLIDE_DURATION = 5000
+const TRANSITION_DURATION = 1000
 
 function Hero() {
   const { t } = useTranslation()
@@ -35,24 +35,20 @@ function Hero() {
   const [isPaused, setIsPaused] = useState(false)
   const [showScrollHint, setShowScrollHint] = useState(true)
   
-  // Estados individuales para animación secuencial
   const [showTitle, setShowTitle] = useState(true)
   const [showLine, setShowLine] = useState(true)
   const [showSubtitle, setShowSubtitle] = useState(true)
   const [showCtas, setShowCtas] = useState(true)
 
-  // Cambio automático de slides
   useEffect(() => {
     if (isPaused) return
 
     const interval = setInterval(() => {
-      // Ocultar elementos en secuencia inversa
       setShowCtas(false)
       setTimeout(() => setShowSubtitle(false), 50)
       setTimeout(() => setShowLine(false), 100)
       setTimeout(() => setShowTitle(false), 150)
       
-      // Cambiar slide y mostrar elementos en secuencia
       setTimeout(() => {
         setCurrentSlide((prev) => (prev + 1) % slideImages.length)
         setShowTitle(true)
@@ -65,7 +61,6 @@ function Hero() {
     return () => clearInterval(interval)
   }, [isPaused])
 
-  // Ocultar scroll hint al hacer scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -79,7 +74,6 @@ function Hero() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Scroll suave al hacer click en scroll hint
   const handleScrollDown = useCallback(() => {
     window.scrollTo({
       top: window.innerHeight,
@@ -87,13 +81,10 @@ function Hero() {
     })
   }, [])
 
-  // Obtener textos del slide actual
   const slideContent = t('home.hero.slides', { returnObjects: true })[currentSlide]
 
   return (
-    <section
-      className="relative h-screen w-full overflow-hidden"
-    >
+    <section className="relative h-screen w-full overflow-hidden">
       {/* Slides de fondo */}
       {slideImages.map((slide, index) => (
         <div
@@ -103,18 +94,16 @@ function Hero() {
           }`}
           style={{ transitionDuration: `${TRANSITION_DURATION}ms` }}
         >
-          {/* Imagen Desktop */}
           <img
-  src={asset(slide.desktop)}
-  alt={slide.alt}
-  className="hidden lg:block absolute inset-0 w-full h-full object-cover"
-/>
-          {/* Imagen Mobile */}
+            src={asset(slide.desktop)}
+            alt={slide.alt}
+            className="hidden lg:block absolute inset-0 w-full h-full object-cover"
+          />
           <img
-  src={asset(slide.mobile)}
-  alt={slide.alt}
-  className="block lg:hidden absolute inset-0 w-full h-full object-cover"
-/>
+            src={asset(slide.mobile)}
+            alt={slide.alt}
+            className="block lg:hidden absolute inset-0 w-full h-full object-cover"
+          />
         </div>
       ))}
 
@@ -126,55 +115,43 @@ function Hero() {
         <div className="container mx-auto px-6 pb-24 lg:pb-20">
           <div className="text-center lg:text-left max-w-xl lg:max-w-2xl mx-auto lg:mx-0">
             
-            {/* Título */}
             <h1
               className={`font-heading font-light text-4xl md:text-5xl lg:text-6xl text-white mb-4 transition-all duration-700 ease-out ${
-                showTitle
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 -translate-y-5'
+                showTitle ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'
               }`}
               dangerouslySetInnerHTML={{ __html: slideContent?.title }}
             />
 
-            {/* Línea decorativa */}
             <div
               className={`w-16 h-px bg-accent mx-auto lg:mx-0 mb-4 transition-all duration-700 ease-out ${
-                showLine
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 -translate-y-5'
+                showLine ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'
               }`}
             />
 
-            {/* Subtítulo */}
             <p
               className={`font-body text-lg md:text-xl text-white/90 mb-8 transition-all duration-700 ease-out ${
-                showSubtitle
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 -translate-y-5'
+                showSubtitle ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'
               }`}
             >
               {slideContent?.subtitle}
             </p>
 
-            {/* CTAs */}
             <div
               className={`flex flex-col sm:flex-row gap-4 justify-center lg:justify-start transition-all duration-700 ease-out ${
-                showCtas
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 -translate-y-5'
+                showCtas ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'
               }`}
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-              <Button to="/contacto" variant="primary">
-  {t('home.hero.cta')}
-</Button>
-<Button to="/unidades" variant="secondary">
-  {t('nav.units')}
-</Button>
-<Button to="/ubicacion" variant="ghost" className="text-white hover:text-text-primary">
-  {t('nav.location')}
-</Button>
+              <Button to="/reservas" variant="primary">
+                {t('home.hero.cta')}
+              </Button>
+              <Button to="/suites" variant="secondary">
+                {t('nav.units')}
+              </Button>
+              <Button to="/ubicacion" variant="ghost" className="text-white hover:text-text-primary">
+                {t('nav.location')}
+              </Button>
             </div>
           </div>
         </div>

@@ -11,13 +11,12 @@ function Footer() {
   const { isDark } = useTheme()
   const currentYear = new Date().getFullYear()
 
-  const navLinks = [
+const navLinks = [
   { to: '/', label: t('nav.home') },
-  { to: '/unidades', label: t('nav.units') },
-  { to: '/amenities', label: t('nav.amenities') },
+  { to: '/habitaciones', label: t('nav.units') },
+  
   { to: '/galeria', label: t('nav.gallery') },
   { to: '/ubicacion', label: t('nav.location') },
-  { to: '/contacto', label: t('nav.contact') },
 ]
 
   const contactInfo = [

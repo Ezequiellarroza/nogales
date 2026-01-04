@@ -1,7 +1,7 @@
 {
   "common": {
     "projectName": "Nogales",
-    "tagline": "Beachfront apartments in Mar del Plata",
+    "tagline": "Dare to dream with us",
     "loading": "Loading...",
     "error": "An error occurred",
     "backToHome": "Back to home",
@@ -14,113 +14,116 @@
     "language": "Language",
     "spanish": "Español",
     "english": "English",
-    "enquire": "Enquire"
+    "book": "Book now"
   },
   "nav": {
     "home": "Home",
-    "units": "Units",
-    "amenities": "Amenities",
+    "units": "Rooms",
+    "amenities": "Services",
     "gallery": "Gallery",
     "location": "Location",
-    "contact": "Contact"
+    "contact": "Reservations"
   },
   "home": {
     "hero": {
-      "cta": "Check availability",
+      "cta": "Book now",
       "slides": [
         {
-          "title": "Live Mar del Plata<br/>from Nogales",
-          "subtitle": "Spacious and bright apartments just 300 meters from the sea"
+          "title": "Dare to dream<br/>with us",
+          "subtitle": "Sun, Beach and Comfort just 3 blocks from the sea in Mar del Plata"
         },
         {
-          "title": "Your place<br/>near the sea",
-          "subtitle": "Strategic location near Playa Grande"
+          "title": "Your retreat<br/>by the sea",
+          "subtitle": "Steps away from Playa Chica and Playa Varese"
         },
         {
-          "title": "Design and<br/>comfort",
-          "subtitle": "Premium amenities: pool, parking, and BBQ area"
+          "title": "Comfort and<br/>premium services",
+          "subtitle": "Pool, BBQ areas, concierge and more for your perfect stay"
         }
       ]
     },
     "values": {
+      "title": "Why Nogales?",
       "location": "Location",
-      "locationDesc": "Just 300 meters from the sea and near Playa Grande",
+      "locationDesc": "3 blocks from Playa Chica and Playa Varese, near Alem and Güemes streets",
       "comfort": "Comfort",
-      "comfortDesc": "Spacious, bright, and functional apartments",
-      "amenities": "Amenities",
-      "amenitiesDesc": "Pool, parking, and BBQ area to enjoy"
+      "comfortDesc": "Spacious, bright and fully equipped apartments",
+      "amenities": "Services",
+      "amenitiesDesc": "Pool, BBQ areas, concierge and laundry for your convenience"
     },
     "intro": {
-      "title": "Your place in Mar del Plata",
-      "description": "Nogales offers apartments designed for those seeking quality of life by the sea. Privileged location, contemporary design, and top-tier amenities in one of the best spots in Mar del Plata.",
-      "cta": "Discover the units"
+      "title": "Your getaway steps from the sea",
+      "description": "Nogales offers you the perfect vacation experience. Prime location meters from the sea, fully equipped apartments and top-notch services so you only have to worry about enjoying yourself.",
+      "cta": "View rooms"
     },
     "units": {
-      "title": "Our Units",
-      "subtitle": "Floor plans designed for every need",
-      "cta": "View all units"
+      "title": "Our Rooms",
+      "subtitle": "Spaces designed for your rest",
+      "cta": "View all rooms"
     },
     "features": {
-      "title": "Building amenities",
-      "subtitle": "Everything you need to enjoy",
-      "cta": "View amenities"
+      "title": "Your place in Mar Del Plata",
+      "subtitle": "Everything you need for a perfect stay",
+      "cta": "View services"
     },
     "architecture": {
-      "title": "Design that inspires",
-      "description": "A contemporary building in a privileged location. Spacious balconies, excellent natural lighting, and unique views just steps from the sea."
+      "title": "Your space 300 meters from the sea",
+      "description": "A contemporary building in a privileged location. Spacious balconies, excellent natural light and unique views just steps from the sea."
     },
     "cta": {
-      "title": "Interested in a unit at Nogales?",
-      "subtitle": "Contact us for availability and payment options",
-      "button": "Request information",
+      "title": "Steps from the sea, in the heart of Playa Grande",
+      "subtitle": "Book your stay and enjoy Mar del Plata like never before",
+      "button": "Book now",
       "contact": "Or message us on WhatsApp"
     }
   },
   "units": {
-    "pageTitle": "Our Units",
-    "pageSubtitle": "Spacious and bright apartments",
+    "pageTitle": "Rooms",
+    "pageSubtitle": "Spaces designed for your rest",
     "filters": {
       "all": "All",
-      "executive": "Executive Suite",
-      "duplex-2amb": "2-Room Duplex",
-      "duplex-3amb": "3-Room Duplex"
+      "superior": "Superior",
+      "executive": "Executive Suite"
     },
     "features": {
-      "ambientes": "Rooms",
-      "dormitorios": "Bedrooms",
-      "banos": "Bathrooms",
-      "balcon": "Balcony",
-      "cocina": "Kitchen",
+      "kitchen": "Equipped kitchen",
+      "wifi": "Free WiFi",
+      "ac": "Air conditioning",
+      "tv": "Smart TV",
+      "linens": "Bed linens",
+      "closet": "Closet",
+      "intercom": "Intercom",
+      "patio": "Patio/Balcony",
       "living": "Living room",
-      "luminoso": "Bright",
-      "vista": "View"
+      "toilette": "Toilette",
+      "seaView": "Sea view",
+      "poolView": "Pool view"
     },
-    "superficie": "Area",
-    "enquire": "Enquire about this unit",
+    "capacity": "Capacity",
+    "guests": "guests",
+    "bedrooms": "bedrooms",
+    "bathrooms": "bathrooms",
+    "book": "Book",
+    "checkAvailability": "Check availability",
     "types": {
+      "superior": {
+        "name": "Superior",
+        "shortDesc": "2-room apartment with pool view",
+        "description": "2-room apartment ideal for couples or small families. Features a bedroom with double bed, living-dining room, equipped kitchen and pool view. Some units include a private patio."
+      },
       "executive": {
         "name": "Executive Suite",
-        "shortDesc": "Premium studio with excellent views",
-        "description": "Premium unit with contemporary design, excellent natural lighting, and balcony with views. Ideal for investment or personal residence."
-      },
-      "duplex2": {
-        "name": "2-Room Duplex",
-        "shortDesc": "Living room and bedroom on two floors",
-        "description": "Two-story apartment with living-dining area, integrated kitchen, and bedroom upstairs. Balcony and excellent brightness. Perfect for couples or investment."
-      },
-      "duplex3": {
-        "name": "3-Room Duplex",
-        "shortDesc": "Two bedrooms and spacious living area",
-        "description": "Spacious two-story apartment with living-dining area, integrated kitchen, and two bedrooms. Ideal for families seeking comfort near the sea."
+        "shortDesc": "3-room apartment with sea view",
+        "description": "Our most exclusive category. 3-room apartment with capacity for up to 6 guests. Features 2 bedrooms, spacious living room with sofa bed, full kitchen and balcony with sea view."
       }
     }
   },
   "amenities": {
-    "pageTitle": "Amenities",
-    "pageSubtitle": "Spaces designed for enjoyment",
+    "pageTitle": "Services",
+    "pageSubtitle": "Everything for your comfort",
     "categories": {
-      "building": "Building",
-      "units": "In the units"
+      "building": "Building amenities",
+      "included": "Included in your stay"
     },
     "list": {
       "pool": {
@@ -129,23 +132,31 @@
       },
       "parking": {
         "name": "Parking",
-        "description": "Covered parking included for your vehicle."
+        "description": "Covered parking available for guests."
       },
       "grill": {
         "name": "BBQ Area",
         "description": "Grill area to enjoy a barbecue with family and friends."
       },
+      "concierge": {
+        "name": "Concierge",
+        "description": "Concierge service to assist you during your stay."
+      },
+      "laundry": {
+        "name": "Laundry",
+        "description": "Laundry service available in the building."
+      },
+      "storage": {
+        "name": "Storage",
+        "description": "Storage space for luggage and equipment."
+      },
+      "wifi": {
+        "name": "WiFi",
+        "description": "High-speed internet throughout the building."
+      },
       "security": {
         "name": "Security",
-        "description": "Building with security for your peace of mind."
-      },
-      "luminosity": {
-        "name": "Natural Light",
-        "description": "Units with excellent natural lighting."
-      },
-      "balcony": {
-        "name": "Balcony",
-        "description": "All units feature a balcony."
+        "description": "24-hour security for your peace of mind."
       }
     }
   },
@@ -154,10 +165,10 @@
     "pageSubtitle": "Discover Nogales",
     "categories": {
       "all": "All",
-      "units": "Units",
+      "suites": "Rooms",
       "common": "Common areas",
       "building": "Building",
-      "details": "Details"
+      "pool": "Pool"
     },
     "viewImage": "View image",
     "previous": "Previous",
@@ -166,31 +177,49 @@
   },
   "location": {
     "pageTitle": "Location",
-    "pageSubtitle": "300 meters from the sea",
+    "pageSubtitle": "3 blocks from the sea",
     "address": "Address",
-    "area": "Mar del Plata, near Playa Grande",
-    "howToArrive": "How to arrive",
+    "area": "Mar del Plata, Buenos Aires",
+    "howToArrive": "How to get here",
     "byCar": "By car",
-    "byCarDesc": "Easy access from Route 2. Private parking included.",
-    "nearby": "Nearby",
-    "nearbyDesc": "Steps from Playa Grande, restaurants, shops, and services.",
-    "beach": "Beach",
-    "beachDesc": "Just 300 meters from the sea. Enjoy the coast year-round.",
-    "contactUs": "Contact us",
-    "contactSubtitle": "Interested in a unit? Write to us",
+    "byCarDesc": "Easy access from Route 2. Parking available for guests.",
+    "nearby": "In the area",
+    "nearbyDesc": "Near Alem, Güemes and Olavarría streets with restaurants and shops.",
+    "beach": "Beaches",
+    "beachDesc": "3 blocks from Playa Chica and Playa Varese.",
+    "highlights": {
+      "playaChica": "Playa Chica 3 blocks away",
+      "playaVarese": "Playa Varese 3 blocks away",
+      "gastronomia": "Dining district",
+      "comercios": "Shops and services"
+    }
+  },
+  "reservations": {
+    "pageTitle": "Reservations",
+    "pageSubtitle": "Book your stay at Nogales",
     "form": {
       "name": "Full name",
       "email": "Email",
       "phone": "Phone",
-      "message": "Message",
-      "send": "Send enquiry",
+      "checkIn": "Check-in date",
+      "checkOut": "Check-out date",
+      "guests": "Number of guests",
+      "suite": "Room type",
+      "message": "Additional comments",
+      "send": "Send request",
       "sending": "Sending...",
-      "success": "Enquiry sent! We'll get back to you soon.",
+      "success": "Request sent! We will contact you to confirm your reservation.",
       "error": "There was an error. Please try again."
+    },
+    "contact": {
+      "title": "Prefer to contact us directly?",
+      "whatsapp": "Message us on WhatsApp",
+      "email": "Send us an email",
+      "phone": "Call us"
     }
   },
   "footer": {
-    "description": "Real estate development in Mar del Plata. Spacious and bright apartments just 300 meters from the sea, near Playa Grande. Pool, parking, and BBQ area.",
+    "description": "Vacation rentals in Mar del Plata. Fully equipped apartments 3 blocks from the sea, near Playa Chica and Playa Varese. Sun, Beach and Comfort.",
     "quickLinks": "Links",
     "contact": "Contact",
     "followUs": "Follow us",
@@ -198,6 +227,12 @@
     "developedBy": "Developed by",
     "privacyPolicy": "Privacy",
     "termsConditions": "Terms"
+  },
+  "contact": {
+    "phone": "+54 11 3155 8318",
+    "email": "info@viewdesarrollos.com.ar",
+    "whatsapp": "5491131558318",
+    "address": "Mar del Plata, Buenos Aires, Argentina"
   },
   "accessibility": {
     "skipToContent": "Skip to content",
@@ -216,11 +251,11 @@
     "generic": {
       "title": "Something went wrong",
       "description": "An unexpected error occurred. Please try again.",
-      "cta": "Try again"
+      "cta": "Retry"
     }
   },
   "whatsapp": {
-    "defaultMessage": "Hello! I'm interested in learning more about the apartments at Nogales. Could you give me information?",
-    "tooltip": "Message us"
+    "defaultMessage": "Hi! I'm interested in booking at Nogales. Could you give me information about availability?",
+    "tooltip": "Book via WhatsApp"
   }
 }

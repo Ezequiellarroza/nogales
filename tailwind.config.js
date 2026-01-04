@@ -8,35 +8,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        base: {
-          DEFAULT: '#EAE6E1',
-          dark: '#1A1918',
-        },
-        surface: {
-          DEFAULT: '#F5F2EE',
-          dark: '#242221',
-        },
-        sunken: {
-          DEFAULT: '#DDD9D4',
-          dark: '#141312',
-        },
-        text: {
-          primary: {
-            DEFAULT: '#2D2A26',
-            dark: '#F5F2EE',
-          },
-          secondary: {
-            DEFAULT: '#6B6560',
-            dark: '#A39E98',
-          },
-        },
+        base: 'var(--color-base)',
+        surface: 'var(--color-surface)',
+        sunken: 'var(--color-sunken)',
+        'text-primary': 'var(--color-text-primary)',
+        'text-secondary': 'var(--color-text-secondary)',
         accent: {
-  DEFAULT: '#5BA3C0',      // Celeste principal
-  light: '#BDD9E7',        // Celeste claro para fondos/badges
-  dark: '#7FBDD6',         // Versión más clara para dark mode
-  hover: '#4A8FA8',        // Más oscuro para hover en light
-  'hover-dark': '#8FC9E0', // Más claro para hover en dark
-},
+          DEFAULT: 'var(--color-accent)',
+          hover: 'var(--color-accent-hover)',
+          light: 'var(--color-accent-light)',
+        },
       },
       fontFamily: {
         heading: ['Roboto', 'sans-serif'],

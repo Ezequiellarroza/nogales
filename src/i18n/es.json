@@ -1,7 +1,7 @@
 {
   "common": {
     "projectName": "Nogales",
-    "tagline": "Departamentos frente al mar en Mar del Plata",
+    "tagline": "Atrévete a soñar con nosotros",
     "loading": "Cargando...",
     "error": "Ha ocurrido un error",
     "backToHome": "Volver al inicio",
@@ -14,138 +14,149 @@
     "language": "Idioma",
     "spanish": "Español",
     "english": "English",
-    "enquire": "Consultar"
+    "book": "Reservar"
   },
   "nav": {
     "home": "Inicio",
-    "units": "Unidades",
-    "amenities": "Amenities",
+    "units": "Habitaciones",
+    "amenities": "Servicios",
     "gallery": "Galería",
     "location": "Ubicación",
-    "contact": "Contacto"
+    "contact": "Reservas"
   },
   "home": {
     "hero": {
-      "cta": "Consultar disponibilidad",
+      "cta": "Reservar ahora",
       "slides": [
         {
-          "title": "Viví Mar del Plata<br/>desde Nogales",
-          "subtitle": "Departamentos amplios y luminosos a 300 metros del mar"
+          "title": "Atrévete a soñar<br/>con nosotros",
+          "subtitle": "Sol, Playa y Comfort a 3 cuadras del mar en Mar del Plata"
         },
         {
-          "title": "Tu lugar<br/>cerca del mar",
-          "subtitle": "Ubicación estratégica cerca de Playa Grande"
+          "title": "Tu descanso<br/>frente al mar",
+          "subtitle": "A pasos de Playa Chica y Playa Varese"
         },
         {
-          "title": "Diseño y<br/>confort",
-          "subtitle": "Amenities premium: piscina, cochera y parrilla"
+          "title": "Confort y<br/>servicios premium",
+          "subtitle": "Piscina, parrilleros, concierge y más para tu estadía perfecta"
         }
       ]
     },
     "values": {
+      "title": "¿Por qué Nogales?",
       "location": "Ubicación",
-      "locationDesc": "A solo 300 metros del mar y cerca de Playa Grande",
+      "locationDesc": "A 3 cuadras de Playa Chica y Playa Varese, cerca de Alem y Güemes",
       "comfort": "Confort",
-      "comfortDesc": "Departamentos amplios, luminosos y funcionales",
-      "amenities": "Amenities",
-      "amenitiesDesc": "Piscina, cochera y parrilla para disfrutar"
+      "comfortDesc": "Departamentos amplios, luminosos y completamente equipados",
+      "amenities": "Servicios",
+      "amenitiesDesc": "Piscina, parrilleros, concierge y laundry para tu comodidad"
     },
     "intro": {
-      "title": "Tu lugar en Mar del Plata",
-      "description": "Nogales ofrece departamentos pensados para quienes buscan calidad de vida frente al mar. Ubicación privilegiada, diseño contemporáneo y amenities de primer nivel en uno de los mejores puntos de Mar del Plata.",
-      "cta": "Conocé las unidades"
+      "title": "Tu escapada a metros del mar",
+      "description": "Nogales te ofrece la experiencia perfecta para tus vacaciones. Ubicación privilegiada a metros del mar, departamentos completamente equipados y servicios de primer nivel para que solo te preocupes por disfrutar.",
+      "cta": "Ver habitaciones"
     },
     "units": {
-      "title": "Nuestras Unidades",
-      "subtitle": "Tipologías pensadas para cada necesidad",
-      "cta": "Ver todas las unidades"
+      "title": "Nuestras Habitaciones",
+      "subtitle": "Espacios pensados para tu descanso",
+      "cta": "Ver todas las habitaciones"
     },
     "features": {
-      "title": "Amenities del edificio",
-      "subtitle": "Todo lo que necesitás para disfrutar",
-      "cta": "Ver amenities"
+      "title": "Tu lugar en Mar Del Plata",
+      "subtitle": "Todo lo que necesitás para una estadía perfecta",
+      "cta": "Ver servicios"
     },
     "architecture": {
-      "title": "Diseño que inspira",
+      "title": "Tu espacio a 300 metros del mar",
       "description": "Un edificio de líneas contemporáneas en una ubicación privilegiada. Amplios balcones, excelente iluminación natural y vistas únicas a solo pasos del mar."
     },
     "cta": {
-      "title": "¿Te interesa una unidad en Nogales?",
-      "subtitle": "Consultanos por disponibilidad y formas de pago",
-      "button": "Solicitar información",
+      "title": "A metros del mar, en el corazón de Playa Grande",
+      "subtitle": "Reservá tu estadía y disfrutá de Mar del Plata como nunca",
+      "button": "Reservar ahora",
       "contact": "O escribinos por WhatsApp"
     }
   },
   "units": {
-    "pageTitle": "Nuestras Unidades",
-    "pageSubtitle": "Departamentos amplios y luminosos",
+    "pageTitle": "Habitaciones",
+    "pageSubtitle": "Espacios pensados para tu descanso",
     "filters": {
       "all": "Todas",
-      "executive": "Executive Suite",
-      "duplex-2amb": "Duplex 2 amb",
-      "duplex-3amb": "Duplex 3 amb"
+      "superior": "Superior",
+      "executive": "Executive Suite"
     },
     "features": {
-      "ambientes": "Ambientes",
-      "dormitorios": "Dormitorios",
-      "banos": "Baños",
-      "balcon": "Balcón",
-      "cocina": "Cocina",
-      "living": "Living",
-      "luminoso": "Luminoso",
-      "vista": "Vista"
+      "kitchen": "Cocina equipada",
+      "wifi": "WiFi gratis",
+      "ac": "Aire acondicionado",
+      "tv": "Smart TV",
+      "linens": "Ropa de cama",
+      "closet": "Placard",
+      "intercom": "Intercomunicador",
+      "patio": "Patio/Balcón",
+      "living": "Living comedor",
+      "toilette": "Toilette",
+      "seaView": "Vista al mar",
+      "poolView": "Vista a la piscina"
     },
-    "superficie": "Superficie",
-    "enquire": "Consultar por esta unidad",
+    "capacity": "Capacidad",
+    "guests": "huéspedes",
+    "bedrooms": "dormitorios",
+    "bathrooms": "baños",
+    "book": "Reservar",
+    "checkAvailability": "Consultar disponibilidad",
     "types": {
+      "superior": {
+        "name": "Superior",
+        "shortDesc": "2 ambientes con vista a la piscina",
+        "description": "Departamento de 2 ambientes ideal para parejas o familias pequeñas. Cuenta con dormitorio con cama doble, living-comedor, cocina equipada y vista a la piscina. Algunas unidades incluyen patio privado."
+      },
       "executive": {
         "name": "Executive Suite",
-        "shortDesc": "Monoambiente premium con excelente vista",
-        "description": "Unidad de categoría con diseño contemporáneo, excelente iluminación natural y balcón con vista. Ideal para inversión o vivienda personal."
-      },
-      "duplex2": {
-        "name": "Duplex 2 Ambientes",
-        "shortDesc": "Living y dormitorio en dos plantas",
-        "description": "Departamento en dos plantas con living-comedor, cocina integrada y dormitorio en planta alta. Balcón y excelente luminosidad. Perfecto para parejas o inversión."
-      },
-      "duplex3": {
-        "name": "Duplex 3 Ambientes",
-        "shortDesc": "Dos dormitorios y amplio living",
-        "description": "Espacioso departamento en dos plantas con living-comedor, cocina integrada y dos dormitorios. Ideal para familias que buscan comodidad cerca del mar."
+        "shortDesc": "3 ambientes con vista al mar",
+        "description": "Nuestra categoría más exclusiva. Departamento de 3 ambientes con capacidad para hasta 6 personas. Cuenta con 2 dormitorios, living amplio con sofá cama, cocina completa y balcón con vista al mar."
       }
     }
   },
   "amenities": {
-    "pageTitle": "Amenities",
-    "pageSubtitle": "Espacios pensados para disfrutar",
+    "pageTitle": "Servicios",
+    "pageSubtitle": "Todo para tu comodidad",
     "categories": {
       "building": "Del edificio",
-      "units": "En las unidades"
+      "included": "Incluidos en tu estadía"
     },
     "list": {
       "pool": {
         "name": "Piscina",
-        "description": "Piscina descubierta para disfrutar en los días de calor."
+        "description": "Piscina exterior para disfrutar en los días de calor."
       },
       "parking": {
         "name": "Cochera",
-        "description": "Cochera cubierta incluida para tu vehículo."
+        "description": "Estacionamiento cubierto disponible para huéspedes."
       },
       "grill": {
-        "name": "Parrilla",
+        "name": "Parrilleros",
         "description": "Área de parrilla para disfrutar un asado con familia y amigos."
+      },
+      "concierge": {
+        "name": "Concierge",
+        "description": "Servicio de conserjería para asistirte durante tu estadía."
+      },
+      "laundry": {
+        "name": "Laundry",
+        "description": "Servicio de lavandería disponible en el edificio."
+      },
+      "storage": {
+        "name": "Bauleras",
+        "description": "Espacio de guardado para equipaje y equipamiento."
+      },
+      "wifi": {
+        "name": "WiFi",
+        "description": "Internet de alta velocidad en todo el edificio."
       },
       "security": {
         "name": "Seguridad",
-        "description": "Edificio con seguridad para tu tranquilidad."
-      },
-      "luminosity": {
-        "name": "Luminosidad",
-        "description": "Unidades con excelente iluminación natural."
-      },
-      "balcony": {
-        "name": "Balcón",
-        "description": "Todas las unidades cuentan con balcón."
+        "description": "Edificio con seguridad 24hs para tu tranquilidad."
       }
     }
   },
@@ -154,10 +165,10 @@
     "pageSubtitle": "Conocé Nogales",
     "categories": {
       "all": "Todas",
-      "units": "Unidades",
+      "suites": "Habitaciones",
       "common": "Áreas comunes",
       "building": "Edificio",
-      "details": "Detalles"
+      "pool": "Piscina"
     },
     "viewImage": "Ver imagen",
     "previous": "Anterior",
@@ -166,31 +177,49 @@
   },
   "location": {
     "pageTitle": "Ubicación",
-    "pageSubtitle": "A 300 metros del mar",
+    "pageSubtitle": "A 3 cuadras del mar",
     "address": "Dirección",
-    "area": "Mar del Plata, cerca de Playa Grande",
+    "area": "Mar del Plata, Buenos Aires",
     "howToArrive": "Cómo llegar",
     "byCar": "En auto",
-    "byCarDesc": "Fácil acceso desde la ruta 2. Cochera propia incluida.",
+    "byCarDesc": "Fácil acceso desde la ruta 2. Cochera disponible para huéspedes.",
     "nearby": "En la zona",
-    "nearbyDesc": "A pasos de Playa Grande, restaurantes, comercios y servicios.",
-    "beach": "Playa",
-    "beachDesc": "A solo 300 metros del mar. Disfrutá la costa todo el año.",
-    "contactUs": "Contactanos",
-    "contactSubtitle": "¿Te interesa una unidad? Escribinos",
+    "nearbyDesc": "Cerca de calles Alem, Güemes y Olavarría con gastronomía y comercios.",
+    "beach": "Playas",
+    "beachDesc": "A 3 cuadras de Playa Chica y Playa Varese.",
+    "highlights": {
+      "playaChica": "Playa Chica a 3 cuadras",
+      "playaVarese": "Playa Varese a 3 cuadras",
+      "gastronomia": "Zona gastronómica",
+      "comercios": "Comercios y servicios"
+    }
+  },
+  "reservations": {
+    "pageTitle": "Reservas",
+    "pageSubtitle": "Reservá tu estadía en Nogales",
     "form": {
       "name": "Nombre completo",
       "email": "Email",
       "phone": "Teléfono",
-      "message": "Mensaje",
-      "send": "Enviar consulta",
+      "checkIn": "Fecha de llegada",
+      "checkOut": "Fecha de salida",
+      "guests": "Cantidad de huéspedes",
+      "suite": "Tipo de habitación",
+      "message": "Comentarios adicionales",
+      "send": "Enviar solicitud",
       "sending": "Enviando...",
-      "success": "¡Consulta enviada! Te responderemos pronto.",
+      "success": "¡Solicitud enviada! Te contactaremos para confirmar tu reserva.",
       "error": "Hubo un error. Por favor, intentá de nuevo."
+    },
+    "contact": {
+      "title": "¿Preferís contactarnos directamente?",
+      "whatsapp": "Escribinos por WhatsApp",
+      "email": "Envianos un email",
+      "phone": "Llamanos"
     }
   },
   "footer": {
-    "description": "Desarrollo inmobiliario en Mar del Plata. Departamentos amplios y luminosos a solo 300 metros del mar, cerca de Playa Grande. Piscina, cochera y parrilla.",
+    "description": "Alquiler temporario en Mar del Plata. Departamentos completamente equipados a 3 cuadras del mar, cerca de Playa Chica y Playa Varese. Sol, Playa y Comfort.",
     "quickLinks": "Enlaces",
     "contact": "Contacto",
     "followUs": "Seguinos",
@@ -198,6 +227,12 @@
     "developedBy": "Desarrollado por",
     "privacyPolicy": "Privacidad",
     "termsConditions": "Términos"
+  },
+  "contact": {
+    "phone": "+54 11 3155 8318",
+    "email": "info@viewdesarrollos.com.ar",
+    "whatsapp": "5491131558318",
+    "address": "Mar del Plata, Buenos Aires, Argentina"
   },
   "accessibility": {
     "skipToContent": "Saltar al contenido",
@@ -220,7 +255,7 @@
     }
   },
   "whatsapp": {
-    "defaultMessage": "Hola! Me interesa conocer más sobre los departamentos en Nogales. ¿Podrían darme información?",
-    "tooltip": "Escribinos"
+    "defaultMessage": "Hola! Me interesa reservar en Nogales. ¿Podrían darme información sobre disponibilidad?",
+    "tooltip": "Reservar por WhatsApp"
   }
 }

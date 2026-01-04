@@ -19,20 +19,42 @@ function FeatureItem({ feature, index }) {
   return (
     <div
       ref={ref}
-      className={`text-center transition-all duration-700 ease-out ${
+      className={`group text-center transition-all duration-700 ease-out ${
         isInView
           ? 'opacity-100 translate-y-0'
-          : 'opacity-0 translate-y-8'
+          : 'opacity-0 translate-y-12'
       }`}
-      style={{ transitionDelay: `${index * 100}ms` }}
+      style={{ transitionDelay: `${index * 150}ms` }}
     >
-      {/* Icono */}
-      <div className="inline-flex items-center justify-center w-16 h-16 mb-4 bg-gray-100 dark:bg-white/10 rounded-full text-accent">
-        <feature.icon className="w-7 h-7" strokeWidth={1.5} />
+      {/* Contenedor del icono con efectos */}
+      <div className="relative inline-flex items-center justify-center mb-4">
+        {/* Círculo de fondo con gradiente animado */}
+        <div 
+          className={`absolute inset-0 rounded-full bg-gradient-to-br from-accent/20 via-accent/10 to-transparent transition-all duration-500 group-hover:scale-125 group-hover:opacity-0 ${
+            isInView ? 'animate-pulse-slow' : ''
+          }`}
+          style={{ 
+            width: '4rem', 
+            height: '4rem',
+            animationDelay: `${index * 150}ms`
+          }}
+        />
+        
+        {/* Círculo principal */}
+        <div className="relative w-16 h-16 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center transition-all duration-500 group-hover:bg-accent group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-accent/30">
+          {/* Icono */}
+          <feature.icon 
+            className="w-7 h-7 text-accent transition-all duration-500 group-hover:text-white group-hover:scale-110 group-hover:animate-bounce-subtle" 
+            strokeWidth={1.5} 
+          />
+        </div>
+
+        {/* Ring de hover */}
+        <div className="absolute inset-0 w-16 h-16 rounded-full border-2 border-accent/0 transition-all duration-500 group-hover:border-accent/30 group-hover:scale-150 group-hover:opacity-0" />
       </div>
 
       {/* Nombre */}
-      <h3 className="font-medium text-sm text-text-primary dark:text-white whitespace-nowrap">
+      <h3 className="font-medium text-sm text-text-primary dark:text-white whitespace-nowrap transition-colors duration-300 group-hover:text-accent">
         {t(`amenities.list.${feature.key}.name`)}
       </h3>
     </div>
@@ -44,7 +66,7 @@ function FeaturesPreview() {
   const [headerRef, headerInView] = useInView({ threshold: 0.2 })
 
   return (
-    <section className="py-20 lg:py-28 bg-white dark:bg-surface">
+    <section className="py-20 lg:py-28 bg-white dark:bg-surface overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div
@@ -74,8 +96,8 @@ function FeaturesPreview() {
         {/* CTA */}
         <div className="text-center">
           <Button to="/amenities" variant="primary">
-  {t('home.features.cta')}
-</Button>
+            {t('home.features.cta')}
+          </Button>
         </div>
       </div>
     </section>

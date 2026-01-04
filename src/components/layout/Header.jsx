@@ -10,14 +10,6 @@ import Button from '../ui/Button'
 
 import { asset } from '../../utils/assets'
 
-/**
- * Header
- * 
- * Navegación principal con:
- * - Logo real + texto ARAUCARIAS
- * - Transparente con texto blanco en hero
- * - Fondo sólido al hacer scroll
- */
 function Header() {
   const { t } = useTranslation()
   const { isDark, toggleTheme } = useTheme()
@@ -26,11 +18,17 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
+  // Detectar si estamos en Home
+  const isHome = location.pathname === '/'
+  
+  // Header sólido si: hay scroll O no estamos en Home
+  const shouldShowSolidHeader = isScrolled || !isHome
+
   // Links de navegación
-const navLinks = [
+  const navLinks = [
   { to: '/', label: t('nav.home') },
-  { to: '/unidades', label: t('nav.units') },
-  { to: '/amenities', label: t('nav.amenities') },
+  { to: '/habitaciones', label: t('nav.units') },
+ 
   { to: '/galeria', label: t('nav.gallery') },
   { to: '/ubicacion', label: t('nav.location') },
 ]
@@ -63,13 +61,12 @@ const navLinks = [
   }, [isMenuOpen])
 
   // Determinar qué logo usar
-  // No scrolled = sobre hero = siempre logo blanco
-  // Scrolled = logo negro en light mode, logo blanco en dark mode
- const logoSrc = !isScrolled || isDark
-  ? asset('images/brand/logo-nogales-white.png')
-  : asset('images/brand/logo-nogales-black.png')
-  // Clases de texto según estado del scroll
-  const textColorClass = isScrolled
+  const logoSrc = !shouldShowSolidHeader || isDark
+    ? asset('images/brand/logo-nogales-white.png')
+    : asset('images/brand/logo-nogales-black.png')
+
+  // Clases de texto según estado
+  const textColorClass = shouldShowSolidHeader
     ? 'text-text-primary dark:text-white'
     : 'text-white'
 
@@ -78,7 +75,7 @@ const navLinks = [
       <header
         className={`
           fixed top-0 left-0 right-0 z-50 transition-all duration-300
-          ${isScrolled
+          ${shouldShowSolidHeader
             ? 'bg-white/95 dark:bg-base/95 backdrop-blur-md shadow-sm'
             : 'bg-transparent'
           }
@@ -94,17 +91,17 @@ const navLinks = [
               aria-label={t('common.projectName')}
             >
               <img 
-  src={logoSrc}
-  alt="Nogales"
-  className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-105"
-/>
-<span className={`
-  hidden sm:block font-heading text-xl font-semibold tracking-wide
-  transition-colors duration-300
-  ${textColorClass}
-`}>
-  NOGALES
-</span>
+                src={logoSrc}
+                alt="Nogales"
+                className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+              <span className={`
+                hidden sm:block font-heading text-xl font-semibold tracking-wide
+                transition-colors duration-300
+                ${textColorClass}
+              `}>
+                NOGALES
+              </span>
             </Link>
 
             {/* Navegación Desktop */}
@@ -115,7 +112,7 @@ const navLinks = [
                   to={link.to}
                   className={({ isActive }) => `
                     px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200
-                    ${isScrolled
+                    ${shouldShowSolidHeader
                       ? isActive
                         ? 'text-accent bg-gray-100 dark:bg-white/10'
                         : 'text-text-secondary hover:text-text-primary hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-white/10'
@@ -134,14 +131,14 @@ const navLinks = [
             <div className="hidden lg:flex items-center gap-3">
               
               {/* Selector de idioma */}
-              <LanguageSelector variant="compact" isScrolled={isScrolled} />
+              <LanguageSelector variant="compact" isScrolled={shouldShowSolidHeader} />
               
               {/* Toggle Dark Mode */}
               <button
                 onClick={toggleTheme}
                 className={`
                   p-2.5 rounded-lg transition-all duration-200
-                  ${isScrolled
+                  ${shouldShowSolidHeader
                     ? 'bg-gray-100 hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20'
                     : 'bg-white/10 hover:bg-white/20'
                   }
@@ -149,16 +146,16 @@ const navLinks = [
                 aria-label={t('accessibility.toggleDarkMode')}
               >
                 {isDark ? (
-                  <Sun className={`w-5 h-5 ${isScrolled ? 'text-accent' : 'text-white'}`} />
+                  <Sun className={`w-5 h-5 ${shouldShowSolidHeader ? 'text-accent' : 'text-white'}`} />
                 ) : (
-                  <Moon className={`w-5 h-5 ${isScrolled ? 'text-accent' : 'text-white'}`} />
+                  <Moon className={`w-5 h-5 ${shouldShowSolidHeader ? 'text-accent' : 'text-white'}`} />
                 )}
               </button>
 
               {/* CTA Contactar */}
-             <Button to="/contacto" variant="primary" size="small">
-  {t('nav.contact')}
-</Button>
+              <Button to="/contacto" variant="primary" size="small">
+                {t('nav.contact')}
+              </Button>
             </div>
 
             {/* Botón menú mobile */}
@@ -166,7 +163,7 @@ const navLinks = [
               onClick={() => setIsMenuOpen(true)}
               className={`
                 lg:hidden p-2.5 rounded-lg transition-all duration-200
-                ${isScrolled
+                ${shouldShowSolidHeader
                   ? 'bg-gray-100 hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20'
                   : 'bg-white/10 hover:bg-white/20'
                 }
@@ -174,7 +171,7 @@ const navLinks = [
               aria-label={t('accessibility.openMenu')}
               aria-expanded={isMenuOpen}
             >
-              <Menu className={`w-5 h-5 ${isScrolled ? 'text-text-primary dark:text-white' : 'text-white'}`} />
+              <Menu className={`w-5 h-5 ${shouldShowSolidHeader ? 'text-text-primary dark:text-white' : 'text-white'}`} />
             </button>
           </div>
         </div>
@@ -213,14 +210,14 @@ const navLinks = [
               className="flex items-center gap-3"
               onClick={() => setIsMenuOpen(false)}
             >
-            <img 
-  src={isDark ? asset('images/brand/logo-nogales-white.png') : asset('images/brand/logo-nogales-black.png')}
-  alt="Nogales"
-  className="w-10 h-10 object-contain"
-/>
-<span className="font-heading text-xl font-semibold tracking-wide text-text-primary dark:text-white">
-  NOGALES
-</span>
+              <img 
+                src={isDark ? asset('images/brand/logo-nogales-white.png') : asset('images/brand/logo-nogales-black.png')}
+                alt="Nogales"
+                className="w-10 h-10 object-contain"
+              />
+              <span className="font-heading text-xl font-semibold tracking-wide text-text-primary dark:text-white">
+                NOGALES
+              </span>
             </Link>
 
             <button
@@ -281,14 +278,14 @@ const navLinks = [
             </div>
 
             {/* Botón CTA */}
-           <Button 
-  to="/contacto" 
-  variant="primary" 
-  className="w-full justify-center"
-  onClick={() => setIsMenuOpen(false)}
->
-  {t('nav.contact')}
-</Button>
+            <Button 
+              to="/contacto" 
+              variant="primary" 
+              className="w-full justify-center"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t('nav.contact')}
+            </Button>
           </div>
         </div>
       </div>

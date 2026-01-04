@@ -1,45 +1,45 @@
 /**
- * Datos de contacto - Araucarias Apartamentos
+ * Datos de contacto - Nogales Apartamentos
  */
 
 export const contact = {
   // Nombre oficial
-  name: 'Araucarias Apartamentos',
+  name: 'Nogales Apartamentos',
   legalName: 'VIEW Desarrollos S.A.',
   
   // Ubicación
   address: {
-    street: 'Córdoba 2833',
-    city: 'Moreno',
+    street: 'Bernardo de Irigoyen 2660',
+    city: 'Mar del Plata',
     province: 'Buenos Aires',
     country: 'Argentina',
-    postalCode: 'B1744',
-    full: 'Córdoba 2833, Moreno, Buenos Aires, Argentina',
+    postalCode: '',
+    full: 'Bernardo de Irigoyen 2660, Mar del Plata, Buenos Aires',
   },
   
-  // Coordenadas para mapa (Araucarias by VIEW Desarrollos)
+  // Coordenadas para mapa (actualizar con coordenadas reales)
   coordinates: {
-    lat: -34.6467,
-    lng: -58.7919,
+    lat: -38.0055,
+    lng: -57.5426,
   },
   
   // Teléfonos
   phone: {
-    main: '+54 9 11 2674-5084',
-    whatsapp: '+54 9 11 2674-5084',
+    main: '+54 11 2674-5084',
+    whatsapp: '+54 11 2674-5084',
     mainClean: '5491126745084',
     whatsappClean: '5491126745084',
   },
   
   // Email
   email: {
-    reservations: 'araucarias@viewdesarrollos.com.ar',
-    info: 'araucarias@viewdesarrollos.com.ar',
+    reservations: 'nogales@viewdesarrollos.com.ar',
+    info: 'nogales@viewdesarrollos.com.ar',
   },
   
-  // Redes sociales
+  // Redes sociales (actualizar cuando el cliente confirme)
   social: {
-    instagram: 'https://instagram.com/Araucarias_apartamentos',
+    instagram: 'https://instagram.com/viewdesarrollos',
   },
   
   // Horarios (confirmar con cliente)
@@ -60,12 +60,12 @@ export const contact = {
   // Para el botón de WhatsApp
   whatsapp: {
     number: '5491126745084',
-    defaultMessage: 'Hola! Me interesa hacer una reserva en Araucarias Apartamentos. ¿Podrían darme información sobre disponibilidad?',
+    defaultMessage: 'Hola! Me interesa hacer una reserva en Nogales Apartamentos. ¿Podrían darme información sobre disponibilidad?',
   },
   
-  // Google Maps - Araucarias by VIEW Desarrollos
-  googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8!2d-58.7941!3d-34.6467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc93c0e01e31a1%3A0x5e5e5e5e5e5e5e5e!2sAraucarias%20by%20VIEW%20DESARROLLOS!5e0!3m2!1ses-419!2sar',
-  googleMapsLink: 'https://maps.app.goo.gl/araucarias',
+  // Google Maps (actualizar con link real)
+  googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.5!2d-57.5426!3d-38.0055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBernardo%20de%20Irigoyen%202660!5e0!3m2!1ses-419!2sar',
+  googleMapsLink: 'https://maps.app.goo.gl/wiXz2ZhcqUtB6Zdh7',
 }
 
 /**

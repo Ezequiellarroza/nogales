@@ -1,54 +1,36 @@
 /**
- * Datos de las unidades - Araucarias Apartamentos
+ * Datos de las habitaciones - Nogales Apartamentos
  * 
- * Basado en Fact Sheet del cliente
- * Las traducciones están en i18n (suites.types.[key])
+ * Alquiler temporario en Mar del Plata
+ * Las traducciones están en i18n (units.types.[key])
  */
 
 // Amenities disponibles (iconos de Lucide React)
 export const AMENITIES = {
-  kitchen: { icon: 'ChefHat', i18nKey: 'suites.features.kitchen' },
-  wifi: { icon: 'Wifi', i18nKey: 'suites.features.wifi' },
-  ac: { icon: 'AirVent', i18nKey: 'suites.features.ac' },
-  tv: { icon: 'Tv', i18nKey: 'suites.features.tv' },
-  linens: { icon: 'Bed', i18nKey: 'suites.features.linens' },
-  closet: { icon: 'DoorOpen', i18nKey: 'suites.features.closet' },
-  intercom: { icon: 'Phone', i18nKey: 'suites.features.intercom' },
-  patio: { icon: 'Trees', i18nKey: 'suites.features.patio' },
-  living: { icon: 'Sofa', i18nKey: 'suites.features.living' },
-  toilette: { icon: 'Bath', i18nKey: 'suites.features.toilette' },
+  kitchen: { icon: 'ChefHat', i18nKey: 'units.features.kitchen' },
+  wifi: { icon: 'Wifi', i18nKey: 'units.features.wifi' },
+  ac: { icon: 'AirVent', i18nKey: 'units.features.ac' },
+  tv: { icon: 'Tv', i18nKey: 'units.features.tv' },
+  linens: { icon: 'Bed', i18nKey: 'units.features.linens' },
+  closet: { icon: 'DoorOpen', i18nKey: 'units.features.closet' },
+  intercom: { icon: 'Phone', i18nKey: 'units.features.intercom' },
+  patio: { icon: 'Trees', i18nKey: 'units.features.patio' },
+  living: { icon: 'Sofa', i18nKey: 'units.features.living' },
+  toilette: { icon: 'Bath', i18nKey: 'units.features.toilette' },
+  poolView: { icon: 'Waves', i18nKey: 'units.features.poolView' },
+  seaView: { icon: 'Sunrise', i18nKey: 'units.features.seaView' },
 }
 
-// Tipos de unidad
+// Tipos de habitación
 export const SUITE_TYPES = {
-  CONFORT: 'confort',
   SUPERIOR: 'superior',
   EXECUTIVE: 'executive',
 }
 
 /**
- * Lista de unidades
+ * Lista de habitaciones
  */
 export const suites = [
-  {
-    id: 'confort',
-    slug: 'confort',
-    type: SUITE_TYPES.CONFORT,
-    i18nKey: 'confort',
-    price: null,
-    capacity: {
-      guests: 2,
-      bedrooms: 0,
-      bathrooms: 1,
-    },
-    bedSize: '2.00 x 2.00',
-    amenities: ['kitchen', 'wifi', 'ac', 'tv', 'linens', 'intercom', 'patio'],
-    featured: true,
-    images: [
-      'images/suites/suite-clasica.webp',
-    ],
-    highlights: ['kitchen', 'ac', 'patio'],
-  },
   {
     id: 'superior',
     slug: 'superior',
@@ -56,17 +38,17 @@ export const suites = [
     i18nKey: 'superior',
     price: null,
     capacity: {
-      guests: 2,
+      guests: 4,
       bedrooms: 1,
       bathrooms: 1,
     },
-    bedSize: '2.00 x 2.00',
-    amenities: ['kitchen', 'wifi', 'ac', 'tv', 'linens', 'closet', 'intercom', 'patio'],
+    bedConfig: '1 cama doble + sofá cama',
+    amenities: ['kitchen', 'wifi', 'ac', 'tv', 'linens', 'closet', 'intercom', 'patio', 'poolView'],
     featured: true,
     images: [
       'images/suites/suite-superior.webp',
     ],
-    highlights: ['kitchen', 'closet', 'patio'],
+    highlights: ['kitchen', 'poolView', 'patio'],
   },
   {
     id: 'executive',
@@ -75,20 +57,21 @@ export const suites = [
     i18nKey: 'executive',
     price: null,
     capacity: {
-      guests: 4,
+      guests: 6,
       bedrooms: 2,
       bathrooms: 1,
       toilette: 1,
     },
-    bedSize: '2.00 x 2.00 + 1.20 x 1.90',
-    amenities: ['kitchen', 'wifi', 'ac', 'tv', 'linens', 'closet', 'intercom', 'patio', 'living', 'toilette'],
+    bedConfig: '1 cama doble + 2 camas individuales + sofá cama',
+    amenities: ['kitchen', 'wifi', 'ac', 'tv', 'linens', 'closet', 'intercom', 'patio', 'living', 'toilette', 'seaView'],
     featured: true,
     images: [
       'images/suites/loft-premium.webp',
     ],
-    highlights: ['living', 'kitchen', 'patio'],
+    highlights: ['seaView', 'living', 'kitchen'],
   },
 ]
+
 /**
  * Helpers
  */
