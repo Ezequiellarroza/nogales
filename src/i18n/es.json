@@ -24,6 +24,9 @@
     "location": "Ubicación",
     "contact": "Reservas"
   },
+  "booking": {
+    "title": "Reservá tu estadía"
+  },
   "home": {
     "hero": {
       "cta": "Reservar ahora",
@@ -59,12 +62,11 @@
     "units": {
       "title": "Nuestras Habitaciones",
       "subtitle": "Espacios pensados para tu descanso",
-      "cta": "Ver todas las habitaciones"
+      "cta": "Consultar disponibilidad"
     },
     "features": {
       "title": "Tu lugar en Mar Del Plata",
-      "subtitle": "Todo lo que necesitás para una estadía perfecta",
-      "cta": "Ver servicios"
+      "subtitle": "Todo lo que necesitás para una estadía perfecta"
     },
     "architecture": {
       "title": "Tu espacio a 300 metros del mar",
@@ -176,8 +178,9 @@
     "of": "de"
   },
   "location": {
-    "pageTitle": "Ubicación",
+    "pageTitle": "Ubicación y Contacto",
     "pageSubtitle": "A 3 cuadras del mar",
+    "contactInfo": "Información de contacto",
     "address": "Dirección",
     "area": "Mar del Plata, Buenos Aires",
     "howToArrive": "Cómo llegar",
@@ -192,6 +195,26 @@
       "playaVarese": "Playa Varese a 3 cuadras",
       "gastronomia": "Zona gastronómica",
       "comercios": "Comercios y servicios"
+    },
+    "form": {
+      "title": "Envianos tu consulta",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "source": "¿Cómo nos conociste?",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "successTitle": "¡Mensaje enviado!",
+      "successMessage": "Gracias por contactarnos. Te responderemos a la brevedad.",
+      "error": "Hubo un error al enviar. Por favor, intentá de nuevo.",
+      "sources": {
+        "instagram": "Instagram",
+        "recommendation": "Por recomendación",
+        "google": "Búsqueda en Google",
+        "portal": "Portal de turismo (Booking, Airbnb, etc.)",
+        "other": "Otra"
+      }
     }
   },
   "reservations": {

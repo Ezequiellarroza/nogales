@@ -2,20 +2,54 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/nogales/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hotel Araucarias - Suites de diseño en Moreno. Arquitectura contemporánea, espacios amplios con cocina completa, y el confort de sentirte en casa." />
-    <meta name="theme-color" content="#EAE6E1" />
+    <meta name="description" content="Nogales Apartamentos - Alquiler temporario en Mar del Plata. Departamentos completamente equipados a 3 cuadras del mar, cerca de Playa Chica y Playa Varese." />
+    <meta name="theme-color" content="#5BA3C0" />
     
     <!-- Google Fonts - Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
     
-    <title>Nogales | Suites de Diseño en Mar del Plata</title>
+    <title>Nogales | Apartamentos en Mar del Plata</title>
+
+    <!-- WuBook Widget - Oculto por defecto, sin !important para permitir override -->
+    <style>
+      /* Ocultar widget por defecto */
+      #js_kw_gform_rootf2882160-cbe6-4b91-90cb-e207e26b8d95,
+      .kw_panel {
+        display: none;
+      }
+      
+      /* Estilos de diseño - Paleta Celeste Nogales */
+      .kw_panel__box {
+        background: #F5F2EE;
+        border-radius: 12px;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      /* Botón de reserva - Color celeste */
+      .kw_book_button {
+        background: #5BA3C0 !important;
+        border: none !important;
+        border-radius: 8px !important;
+        color: #ffffff !important;
+      }
+      
+      .kw_book_button:hover {
+        background: #4A8FA8 !important;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- WuBook Booking Widget -->
+    <script class="kas_online_reception" src="https://wubook.net/js/nebk/bwidget.jgz" data-wid="f2882160-cbe6-4b91-90cb-e207e26b8d95"></script>
+
+    <!-- WuBook Iframe para página de reservas -->
+    <script src="https://wubook.net/js/nebi/iframe.jgz"></script>
   </body>
 </html>

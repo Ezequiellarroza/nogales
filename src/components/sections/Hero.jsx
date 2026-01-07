@@ -146,7 +146,7 @@ function Hero() {
               <Button to="/reservas" variant="primary">
                 {t('home.hero.cta')}
               </Button>
-              <Button to="/suites" variant="secondary">
+              <Button to="/habitaciones" variant="secondary">
                 {t('nav.units')}
               </Button>
               <Button to="/ubicacion" variant="ghost" className="text-white hover:text-text-primary">

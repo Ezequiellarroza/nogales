@@ -153,7 +153,7 @@ function Header() {
               </button>
 
               {/* CTA Contactar */}
-              <Button to="/contacto" variant="primary" size="small">
+              <Button to="/reservas" variant="primary" size="small">
                 {t('nav.contact')}
               </Button>
             </div>
