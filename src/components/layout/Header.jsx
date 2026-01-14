@@ -61,9 +61,9 @@ function Header() {
   }, [isMenuOpen])
 
   // Determinar qué logo usar
-  const logoSrc = !shouldShowSolidHeader || isDark
-    ? asset('images/brand/logo-nogales-white.png')
-    : asset('images/brand/logo-nogales-black.png')
+ const logoSrc = !shouldShowSolidHeader || isDark
+  ? asset('images/brand/logo-icon-white.png')
+  : asset('images/brand/logo-icon-black.png')
 
   // Clases de texto según estado
   const textColorClass = shouldShowSolidHeader
@@ -210,11 +210,11 @@ function Header() {
               className="flex items-center gap-3"
               onClick={() => setIsMenuOpen(false)}
             >
-              <img 
-                src={isDark ? asset('images/brand/logo-nogales-white.png') : asset('images/brand/logo-nogales-black.png')}
-                alt="Nogales"
-                className="w-10 h-10 object-contain"
-              />
+             <img 
+  src={isDark ? asset('images/brand/logo-icon-white.png') : asset('images/brand/logo-icon-black.png')}
+  alt="Nogales"
+  className="w-10 h-10 object-contain"
+/>
               <span className="font-heading text-xl font-semibold tracking-wide text-text-primary dark:text-white">
                 NOGALES
               </span>
