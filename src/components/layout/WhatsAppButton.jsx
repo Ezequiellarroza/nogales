@@ -11,7 +11,7 @@ function WhatsAppButton({ phoneNumber = '5491112345678', message = 'Hola! Me gus
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
       className="
-        fixed bottom-6 right-6 z-50
+        fixed bottom-28 right-8  z-50
         w-14 h-14
         flex items-center justify-center
         bg-[#25D366] text-white

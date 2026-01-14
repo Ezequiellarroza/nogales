@@ -20,7 +20,7 @@ function Reservations() {
   useEffect(() => {
     const initIframe = () => {
       if (typeof window.ZakNebIframe !== 'undefined' && containerRef.current && !nebRef.current) {
-        const url = `https://wubook.net/nneb/bk?f=today&n=1&ep=${WUBOOK_ENDPOINT_ID}&o=1.0.0.0`
+        const url = `https://wubook.net/nneb/brtag?f=today&n=4&ep=${WUBOOK_ENDPOINT_ID}&o=1.0.0.0&w_id=9179`
         const target = '#wubook-reservations-iframe'
         
         nebRef.current = new window.ZakNebIframe(target, url)
