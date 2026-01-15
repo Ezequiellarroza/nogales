@@ -157,7 +157,15 @@
       "security": {
         "name": "Security",
         "description": "24-hour security for your peace of mind."
-      }
+      },
+      "luminosity": {
+  "name": "Natural Light",
+  "description": "Spacious rooms with excellent natural lighting."
+},
+"balcony": {
+  "name": "Balcony",
+  "description": "Private balconies to enjoy the outdoors."
+}
     }
   },
   "gallery": {
